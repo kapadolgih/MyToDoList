@@ -1,0 +1,158 @@
+body {
+  font-family: 'Shadows Into Light', cursive;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-color: #B7CADB;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  background: linear-gradient(to left,#fdf6ec, #f3e9dd, #dab88b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.input {
+  display: flex;
+  width: 50%;
+  border: #B7CADB 3px solid;
+}
+
+.inputText {
+  padding: 10px;
+  width: 90%;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.add-button {
+  width: 10%;
+  padding: 10px;
+  background-color: #B7CADB;
+  border: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.todo-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  background-color:#B7CADB;
+  border-radius: 20px 0px 0px 20px;
+  width: 450px;
+  padding: 15px;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02rem;
+  transition: all 0.3s ease-out;
+  word-break: break-all;
+}
+
+.list:last-child {
+  margin-bottom: 0px;
+}
+
+.delete-button {
+  border-radius: 0px 20px 20px 0px;
+  background-color: #f3e9dd;
+  padding: 15px;
+  border: none;
+  font-family: 'Shadows Into Light', cursive;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.empty {
+  color: #fdf6ec;
+}
+
+
+@media all and (max-width: 715px) {
+  .input {
+    width: 80%;
+  }
+  
+  .inputText {
+    width: 90%;
+  }
+  
+  .add-button {
+    width: 10%;
+  }
+
+  .list {
+    width: 250px;
+  }
+}
+
+@media all and (max-width: 615px) {
+  h1 {
+      font-size: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h1 {
+      font-size: 30px;
+  }
+}
+
+@media all and (max-width: 445px) {
+  .input {
+    width: 90%;
+  }
+  
+  .inputText {
+    width: 90%;
+  }
+  
+  .add-button {
+    width: 10%;
+  }
+
+  .list {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .inputText {
+    width: 80%;
+  }
+  
+  .add-button {
+    width: 20%;
+  }
+
+  .list {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 315px) {
+  h1 {
+      font-size: 20px;
+  }
+
+  .list {
+    width: 150px;
+  }
+}
